@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dawn-nxscope"
+version = "0.1.0"
+description = "Dawn extension plugin for nxslib"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "nxslib>=0.9.2",
+]
+
+[project.urls]
+Repository = "https://github.com/railab/dawn-nxscope"
+"Dawn Project" = "https://github.com/railab/dawn"
+
+[tool.black]
+line-length = 79
+target-version = ["py312"]
+
+[tool.isort]
+profile = "black"
+line_length = 79
